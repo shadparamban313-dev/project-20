@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpTrack Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+</head>
+<body>
+
+<div class="dashboard">
+
+    
+    <div class="sidebar">
+
+        <div class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-user"></i></span>
+            <h2>EmpTrack</h2>
+        </div>
+
+        <div class="menu">
+            <a href="#" class="active"><i class="fa-solid fa-house"></i>  Dashboard</a>
+            <a href="#"><i class="fa-solid fa-users"></i>
+
+Employees</a>
+            <a href="#"><i class="fa-regular fa-calendar-days"></i>Attendances</a>
+        </div>
+
+        <div class="admin">
+            <span class="admin-icon"><i class="fa-solid fa-circle-user"></i></span>
+            <span>Admin</span>
+            <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <div class="header">
+            <div>
+                <h1>Welcome Back, Admin!</h1>
+                <p>Here's your employee overview</p>
+            </div>
+            <span class="notification"><i class="fa-solid fa-bell"></i></span>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="summary">
+
+            <div class="summary-card">
+                <div class="icon-box total-icon"><i class="fa-solid fa-users"></i></div>
+                <div>
+                    <p>Total Employees</p>
+                    <h2>4</h2>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="icon-box present-icon"><i class="fa-regular fa-circle-check"></i></div>
+                <div>
+                    <p>Present Employees</p>
+                    <h2>3</h2>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="icon-box absent-icon"><i class="fa-regular fa-circle-xmark"></i></div>
+                <div>
+                    <p>Absent employees</p>
+                    <h2>1</h2>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="employee-section">
+
+            <div class="employee-header">
+                <h3><i class="fa-solid fa-users"></i>      Employee Details</h3>
+
+                <div class="search-add">
+                    <input type="text" placeholder="⌕  Search Employee">
+                    <button>+ Add Employee</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Employee ID</th>
+                        <th>Department</th>
+                        <th>Attendance Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Alice Johnson</td>
+                        <td>EMP001</td>
+                        <td>Development</td>
+                        <td><span class="present">Present</span></td>
+                        <td><button class="delete"><i class="fa-solid fa-trash-can"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Bob smith</td>
+                        <td>EMP002</td>
+                        <td>Design</td>
+                        <td><span class="absent">Absent</span></td>
+                        <td><button class="delete"><i class="fa-solid fa-trash-can"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Charlie Brown</td>
+                        <td>EMP003</td>
+                        <td>Marketing</td>
+                        <td><span class="present">Present</span></td>
+                        <td><button class="delete"><i class="fa-solid fa-trash-can"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>David Lee</td>
+                        <td>EMP004</td>
+                        <td>HR</td>
+                        <td><span class="present">Present</span></td>
+                        <td><button class="delete"><i class="fa-solid fa-trash-can"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- Register New Employee -->
+        <div class="register-section">
+
+            <h3><span class="register-icon"><i class="fa-solid fa-user-plus"></i></span> Register New Employee</h3>
+
+            <div class="form">
+
+                <div class="input-group">
+                    <label>Employee Name</label>
+                    <input type="text" placeholder="Enter Name">
+                </div>
+
+                <div class="input-group">
+                    <label>Employee ID</label>
+                    <input type="text" placeholder="Enter ID">
+                </div>
+
+                <div class="input-group">
+                    <label>Department</label>
+                    <select>
+                        <option>Select Department</option>
+                        <option>Development</option>
+                        <option>Design</option>
+                        <option>Marketing</option>
+                        <option>HR</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Attendance Status</label>
+                    <select>
+                        <option>Present</option>
+                        <option>Absent</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button class="add-button">+ Add Employee</button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

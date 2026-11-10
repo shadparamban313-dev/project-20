@@ -1,0 +1,390 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e5e6eb;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 194px;
+    min-width: 194px;
+    background: #1b2947;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 8px 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 43px;
+}
+
+.logo h2 {
+    font-size: 23px;
+}
+
+.logo-icon {
+    font-size: 35px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.menu a.active,
+.menu a:hover {
+    background: #304de0;
+}
+
+.admin {
+    margin-top: auto;
+    border-top: 1px solid #aab2c1;
+    padding: 17px 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.admin-icon {
+    font-size: 30px;
+}
+
+.arrow {
+    margin-left: auto;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 32px 16px 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.header h1 {
+    font-size: 27px;
+    font-weight: 500;
+    color: #111;
+}
+
+.header p {
+    font-size: 13px;
+    color: #555;
+    margin-top: 4px;
+}
+
+.notification {
+    font-size: 23px;
+}
+
+/* Summary Cards */
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+    margin-bottom: 27px;
+}
+
+.summary-card {
+    background: white;
+    height: 78px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 12px;
+}
+
+.summary-card p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.summary-card h2 {
+    font-size: 22px;
+    color: #111;
+}
+
+.icon-box {
+    width: 53px;
+    height: 63px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.total-icon {
+    background: #b9c5f4;
+    color: #1b2947;
+}
+
+.present-icon {
+    background: #b7f4bf;
+    color: #00d900;
+}
+
+.absent-icon {
+    background: #ffbfc5;
+    color: red;
+}
+
+/* Employee Section */
+.employee-section {
+    background: white;
+    margin-bottom: 36px;
+    border: 1px solid #ccc;
+}
+
+.employee-header {
+    min-height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 6px 7px 12px;
+}
+
+.employee-header h3 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.search-add {
+    display: flex;
+    gap: 8px;
+}
+
+.search-add input {
+    width: 247px;
+    padding: 8px;
+    background: #dedede;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.search-add button,
+.add-button {
+    background: #304de0;
+    color: white;
+    padding: 9px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Employee Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background: #d6d6d6;
+}
+
+th {
+    padding: 10px 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+td {
+    padding: 10px 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+.present,
+.absent {
+    padding: 5px 13px;
+    border-radius: 20px;
+}
+
+.present {
+    background: #b9f2c1;
+    color: #288a35;
+}
+
+.absent {
+    background: #ffbfc5;
+    color: #d92c3b;
+}
+
+.delete {
+    background: #ed1010;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+/* Registration Form */
+.register-section {
+    background: white;
+    padding: 17px 10px;
+    min-height: 191px;
+}
+
+.register-section h3 {
+    font-size: 19px;
+    margin-bottom: 24px;
+    margin-left: 5px;
+}
+
+.register-icon {
+    font-size: 27px;
+    color: #304de0;
+    margin-right: 10px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.input-group label {
+    font-size: 13px;
+    color: #333;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    height: 32px;
+    background: #dedede;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 12px;
+    color: #555;
+}
+
+.add-button {
+    margin-top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+    .sidebar {
+        width: 160px;
+        min-width: 160px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 750px;
+    }
+
+    .form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .admin {
+        display: none;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 21px;
+    }
+
+    .employee-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-add {
+        width: 100%;
+    }
+
+    .search-add input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 750px;
+    }
+}
